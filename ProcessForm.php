@@ -28,7 +28,7 @@ class ProcessForm
         $record->x1 = $roots[0] ?? null;
         $record->x2 = $roots[1] ?? null;
 
-        $DB->insert_record('calculator', $record);
+        $DB->insert_record('results', $record);
 
         return [$record->x1, $record->x2];
     }
