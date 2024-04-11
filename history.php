@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 global $DB;
 
-$sql = "SELECT * FROM {calculator}";
+$sql = "SELECT * FROM {results}";
 
 $records = $DB->get_records_sql($sql);
 ?>

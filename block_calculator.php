@@ -49,6 +49,12 @@ class block_calculator extends block_base
         return $this->content;
     }
 
+    /**
+     * Отображает результат (корни квадратного уравнения)
+     *
+     * @param array $result
+     * @return string
+     */
     private function renderResults(array $result): string
     {
         $x1 = $result[0] ?? 'Нет решения';
