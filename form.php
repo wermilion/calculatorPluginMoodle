@@ -19,7 +19,7 @@ class block_calculator_form extends moodleform
         $form->setType('a', PARAM_FLOAT);
         $form->addRule('a', get_string('required'), 'required', null, 'client');
         $form->addRule('a', get_string('numeric', 'block_calculator'), 'numeric', null, 'client');
-        $form->addRule('a', get_string('notzero', 'block_calculator'), 'regex', '/^(?!0+(\.0+)?$)\d+(\.\d+)?$/', 'client');
+        $form->addRule('a', get_string('notzero', 'block_calculator'), 'regex', '/^-?(?!0+(\.0+)?$)\d+(\.\d+)?$/', 'client');
 
         $form->addElement('text', 'b', get_string('b', 'block_calculator'));
         $form->setType('b', PARAM_FLOAT);
